@@ -1,0 +1,10 @@
+<?php 
+$helper = $this->helper('Keyexpress\DeliveryTime\Helper\Data');
+?>
+<?php if($helper->getTaxPercentage() !=false): ?>
+<div class="product-info-price">
+    <span class="type"><?php echo  __('Incl. Tax'); ?></span>
+    <?php  echo $helper->getTaxPercentage(); ?>
+</span>
+</div>
+<?php endif; ?>
